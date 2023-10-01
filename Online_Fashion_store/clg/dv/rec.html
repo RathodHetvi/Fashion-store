@@ -1,0 +1,37 @@
+<!DOCTYPE HTML>
+
+<html>
+   <head>
+   <title>rectangle</title>
+      <style>
+         #mycanvas {
+            width: 100px;
+            height:100px;
+           
+         }
+      </style>
+      
+      <script type = "text/javascript">
+         
+            
+            
+            var canvas = document.getElementById('mycanvas');  // Get the canvas element using the DOM   
+            var ctx = canvas.getContext('2d');  // use getContext to use the canvas for drawing
+           
+            ctx.fillRect(25,25,100,100);  // Draw rectangle with fill
+            ctx.clearRect(45,45,60,60);  //draw rectangle with only boundary
+            ctx.strokeRect(50,50,50,50);  //This method clears the specified area and makes it fully transparent
+            
+          
+      </script>
+   </head>
+
+
+
+   
+   
+   <body>
+      <canvas id = "mycanvas" ></canvas>
+   </body>
+	
+</html>
